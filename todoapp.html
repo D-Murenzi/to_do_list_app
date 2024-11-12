@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = 'en-US'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content='Plan your day with a to do list you can access and update whether you are online or offline.'>
+    <meta name='keywords' content='to do, list, offline, online, app, web, plan'>
+    <meta name='author' content='D-Murenzi'>
+    <meta name='theme-color' content='#73A1B1'>
+    <script type='module' src='todoapp.js' defer></script>
+    <link rel='icon' href='todolisticon.jpg' type='image/jpeg'>
+    <link rel='stylesheet' href='todoapp.css'>
+    <script src="https://kit.fontawesome.com/2775cc78e8.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <section class='submitsec' style='position:relative;'>
+	<button id='addbut'>
+	  <span style='font-size:30px;'>+</span><br>
+	  <span><input id='submit' type='button' style='all:unset;'value='Add New Task'></button></span>
+      </section>
+      <span class='timer'>
+	<div class='date'>Date : 27 Oct 2024</div>
+	<div class='time'>Time : 01:39 A.M</div>
+      </span>
+      <div class='fullschedule'><button id='schedulebut' style='background-color:#42ddf5; right:unset;'>Show my full schedule.</button></div>
+
+    </header>
+    <div id='butholder'></div>
+      <!-- This is where task list starts.-->
+      <div class='listoftask'>
+	<section class='tasklist'>
+	  <h1>Task list</h1>
+	  <table class='todotasktable'>
+	    <tr class='todorowheader'>
+	      <th class='numberheader'>No</th>
+	      <th class='taskheader'>Task</th>
+	      <th class='descheader'>Description</th>
+	      <th class='descheader'></th>
+	      <th class='descheader'></th>
+	    </tr>
+	    <!-- A trial to be deleted and updated in javascript.-->
+	    <tr class='todorowcell'>
+	      <td class='numbercell'>1.</td>
+	      <td class='taskcell'>Fetching Water</td>
+	      <td class='desccell'>I have to go to fetch water from the stone thank and water means holy spirit from God.</td>
+	      <td class='completeicon'><button class='completebut' style='all:unset; '><img src='completeicon.png' class='completeimg'><p class='completep'>Mark as complete</p></button> </td>
+	      <td class='completeicon'><button class='completebut' style='all:unset; '><img src='addcommenticon.png' class='completeimg'><p class='completep'>Add comment</p></button> </td>
+	    </tr>
+	  </table>
+	</section>
+	<!-- This starts the completed task. -->
+        <section class='tasklistcompleted'>
+	  <h1>Completed Tasks</h1>
+	  <table class='completedtasktable'>
+	    <!-- A trial to be deleted and updated in javascript.-->
+	    <tr class='todorowcell'>
+	      <td class='completedtaskcell'><li>Fetching Waterand goinf to school</li></td>
+	      <td class='edit'><img src='editicon.png'></td>
+	      <td class='delete'><img src='deleteicon.png'></td>
+	      <td class='comment'><img src='commenticon.png'></td>
+	    </tr>
+	  </table>
+	</section>
+      </div>
+      <div style='height:80px; width:96vw;'></dv>
+      <section class='history'>
+	<div class='histdiv'><button class='histbut' style='right:unset';><i class="fas fa-history"></i>Click to view history</button></div>
+      </section>
+
+      <!-- this ends the container. -->
+    </div>
+  </body>
+</html>

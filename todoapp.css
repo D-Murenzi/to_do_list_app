@@ -1,0 +1,254 @@
+html {
+    font-family: sans serif;
+    margin:0;
+    padding:0;
+    background-color: rgb(115, 161, 177, 0.5);
+    transparent:50%;
+}
+
+header {
+    font-size:40px;
+    display:flex;
+    align-content:center;
+    justify-content:center;
+
+
+}
+
+.timer {
+    color:black;
+    background-color: #15FFB1;
+    border: 1px solid green;
+    border-radius:4px;
+    padding:0px 90px 0px 90px;
+}
+
+form {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:50px;
+}
+
+.inputs {
+    width:60vw;
+    padding: 0px 0px 0px 0px;
+    background-color:white;
+}
+
+
+button {
+    position:absolute;
+    right:30px;
+    margin-left:30px;
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background-color:#0D99FF;
+}
+
+.tasklabel, .desclabel {
+    display: inline-block;
+    box-sizing:border-box;
+    border: 1px solid gray;
+    width:30%;
+    background-color:rgb(128, 128, 128, 0.1);
+    margin:0px 0px 0px 0px;
+    height:30px;
+    padding:7px 3px;
+
+}
+
+label {
+    display:inline-block;
+    height:30px;
+    border:1px solid gray;
+    width:100%;
+}
+
+.values {
+    display: inline-flex;
+    box-sizing:border-box;
+    border: 1px solid gray;
+    width:42%;
+    background-color:rgb(128, 128, 128, 0.1);
+    margin:0px 0px 0px 0px;
+    height:30px;
+    padding:7px 3px;
+    align-items:center;
+    position:absolute;
+
+}
+
+input{
+    box-sizing:border-box;
+    height:30px;
+    margin: 0px 0px;
+    padding:0px 0px;
+    width:100%;
+    border-radius:3px;
+ }
+
+.listoftask {
+    display:flex;
+    margin-top:40px;
+    justify-content:center;
+    align-items:center;
+}
+
+/* section about the tasklist*/
+
+.todotasktable {
+    background-color:white;
+    border:1px solid rgb(128, 128, 128, 0.9);
+    border-collapse: collapse;
+}
+
+.numberheader, .taskheader, .descheader, .numbercell, .taskcell, .desccell {
+    border-collapse:collapse;
+    
+}
+
+
+
+/* section about completed task*/
+
+.completedtasktable {
+    width:50vw;
+    background-color:#F5FBF9;
+    
+}
+
+.edit, .delete, .comment{
+    display: inline-flex;
+    width: 30px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    margin-left:15px;
+}
+img {
+    padding:0px 0px 0px 0px;
+    width:30px;
+    height:auto;
+
+}
+
+.commenticon {
+    width:140px;
+    height:30px;
+}
+
+.tasklistcompleted {
+    margin-left:20px;
+}
+
+
+/*complete checker*/
+
+/* Style the table cell with the 'completeicon' class */
+.completeicon {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the button */
+.completebut {
+     align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    background-color: #4CAF50; /* Green color for 'complete' */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    height: auto;
+}
+
+/* Style on hover */
+.completebut:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+/* Style the image inside the button */
+.completeimg {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Style the paragraph inside the button */
+.completep {
+    margin: 0;
+    font-size: 14px;
+}
+/*end complete checker*/
+
+.todorowcell,  {
+    text-align:center;
+}
+
+.history {
+    position:fixed;
+    bottom:10vh;
+    left:0;
+    background-color:rgb(235, 230, 255);
+}
+
+.histbut {
+    width:40%;
+    border-radius:10px;
+    background-color:rgb(102, 2, 60, 0.5);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.histdiv {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+}
+
+@media (max-width:768px) {
+    /* Mobile specific css.*/
+
+    header {
+	font-size:18px;
+    }
+
+    label {
+	font-size:12px;
+    }
+
+    .listoftask {
+	flex-direction:column;
+    }
+
+    .edit, .delete, .comment {
+	display: inline-flex;
+	margin-left: 15px;
+	
+    }
+
+    .tasklistcompleted {
+	margin-left:0px;
+    }
+    
+    .completedtasktable {
+	width:96vw;
+	border-radius:4px;
+	background-color:#F5FBF9;
+    }
+    
+    header button {
+	display:none;
+    }
+}
+

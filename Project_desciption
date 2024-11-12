@@ -1,0 +1,68 @@
+/*Project: Offline Todo List with IndexedDB*/
+
+/*Project Overview:*/
+
+Create an offline-capable to-do list app that stores tasks locally in the browser using IndexedDB. The app should allow users to add, edit, delete, and mark tasks as completed. Additionally, it should enable task retrieval even after closing the browser, showcasing IndexedDB’s persistence and offline functionality.
+
+/*Tasks to Accomplish*/
+
+//Project Setup
+
+Initialize a GitHub repository for the project.
+Set up a basic HTML file, index.html, and a JavaScript file, app.js.
+Add a CSS file for minimal styling to make the interface visually appealing.
+Basic UI
+
+
+//
+Create an input field for task descriptions, an "Add Task" button, and a list to display tasks.
+For each task, display options to edit, delete, and mark as complete.
+IndexedDB Setup
+
+//
+Open an IndexedDB database named todoDB with an object store called tasks.
+Add an onupgradeneeded event to define the object store structure with properties:
+id (auto-incremented primary key),
+description (string),
+completed (boolean).
+Adding Tasks
+
+//
+Create a function to add a task to the object store whenever the "Add Task" button is clicked.
+Ensure the description is stored with completed set to false initially.
+Retrieving Tasks
+
+//
+Set up a function to retrieve all tasks from the tasks object store and display them in the list on page load.
+Use openCursor() to iterate through tasks and render each task with its description and completed status.
+Updating Tasks
+
+//
+Implement functionality to mark tasks as complete or incomplete.
+Update the task’s completed status in IndexedDB and visually indicate this in the UI.
+Editing Tasks
+
+//
+Allow users to edit task descriptions. When the user clicks “Edit,” update the description in both IndexedDB and the UI.
+Deleting Tasks
+
+//
+Enable task deletion by adding a “Delete” button to each task.
+On button click, delete the task from the object store and update the UI.
+Error Handling and Edge Cases
+
+//
+Handle cases like empty task descriptions (e.g., disable "Add Task" if input is empty).
+Add error handling for IndexedDB operations, logging errors in the console for debugging.
+Commit and Document
+
+//
+Document the project in README.md on GitHub.
+Add sections on setup, functionality, and future improvements.
+Commit each task’s progress with meaningful commit messages.
+
+/******/
+Extensions (Optional)
+Add a timestamp to tasks and sort them by date.
+Implement a search function to filter tasks by keyword.
+Create a service worker to cache the app for offline-first functionality.
